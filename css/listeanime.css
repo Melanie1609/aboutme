@@ -1,0 +1,74 @@
+/* '*" : selecteur universel reinitialisation des marges*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DISPLAY: FLEX important*/
+body{
+    background:  linear-gradient(45deg, rgb(129, 66, 79), rgb(174, 183, 224));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;;
+
+}
+
+ol{
+    list-style: none;
+    width: 300px;
+}
+
+ol li{
+    font-size: 1.2rem;
+    background: rgb(23, 23, 23);
+    margin: 10px 0;
+    padding: 20px 30px;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s;
+    z-index: 7;/*le pricipe c'est de mettre supperieur la partir texte qu'on veut voir au dessus du background color*/
+}
+
+ol li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: red;
+    transition: all .4s;
+    z-index: -1;/* passe au dessous du texte*/
+
+}
+
+ol li:hover::before{
+    width: 100%;
+}
+
+/*:nth-child( 1) =va prendre le premier element situé dans la liste*/
+ol li:nth-child(1)::before{
+    background: #4285f4;
+}
+
+ol li:nth-child(2)::before{
+    background: #db4437;
+
+}
+
+ol li:nth-child(3)::before{
+    background:  #f4b400;
+}
+
+ol li:nth-child(4)::before{
+    background: #09fd58;
+}
+
+ol li:hover{
+    transform: translateX(20px);/* decalage vers l'axe des abscisses x*/
+}

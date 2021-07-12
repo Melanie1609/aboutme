@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body{
+    background: linear-gradient(45deg, rgb(129, 66, 79), rgb(174, 183, 224));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.container{
+    
+    position: relative;
+    
+}
+
+.champ{
+    background: rgba(255, 255, 255, .3);
+    padding: 4rem;
+    height: 300px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    /*effet sympa a ajouter*/
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(10px);
+    -moz-bakcdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0,0, .2);
+    text-align: center;
+    
+}/*fanamboarana tranparent.champ+.body*/
+
+p{
+    color: rgb(53, 128, 141);
+    font-weight: bolder;
+    opacity: .7;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0,0, .2);
+}
+
+
+
+input{
+    background: transparent;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top:   1px solid  rgba(255, 255, 255, .3);
+    padding: 1rem;
+    width: 200px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px) ;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-bakcdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0,0, .2);
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0,0, .2);
+    transition: all .3s;
+    margin-bottom: 1.5em;
+
+}
+
+
+
+
+
+input[type="button"]{
+    cursor: pointer;
+    margin-top: -20px;
+    font-size: 1.2rem;
+    width: 170px;
+    color: rgba(19, 18, 17, 0.911);
+}
+
+input[type="button"]::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1 ;
+    transition: all .5s;
+
+}
+
+input[type="button"]:hover::after{
+    transform: rotate(150deg);
+}
+
+input[type="button"]:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25) -10px 10px 25px 0px rgba(39, 200, 255, .25);
+
+}
+
+.drop{
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0,0, .2);
+
+}
+/* manisy ombre flou ombre glasmorphique avec mot clé DPOP */
+.drop-1{
+    height: 80px; width: 80px;
+    top: -20px; left:-40px;
+    z-index: -1;
+}
+
+.drop-2{
+    height: 80px; width:  80px;
+    bottom: -30px; right: -40px;
+    z-index: -1;
+}
+
+.drop-3{
+    height: 100px; width: 100px;
+    bottom: 120px; left: -50px;
+    z-index: -1;
+}
+
+.drop-4{
+    height: 120px; width: 120px;
+    top: -60px;right: -50px;
+    z-index: -1;
+}
+
+.drop-5{
+    height: 60px; width: 60px;
+    top: 170px;right: 90px;
+    z-index: -1;
+}
+
+.avatar{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    overflow: hidden;
+    top: calc(-200px/2);
+    left: calc(50% -40px);
+    margin: 60px 120px ;
+   
+    z-index: 20;
+}
+/*
+.sary{
+    background-image: url("../images/moi.jpg");
+}*/
+h1{
+    margin-right: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family:  'Times New Roman', serif;
+    
+}
+em{
+    font-size: 15px;
+}
+
+.presentation{
+    
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.initial{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 100px;
+    
+    
+}
